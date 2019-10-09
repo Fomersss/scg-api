@@ -1,4 +1,5 @@
 import express from 'express';
+import router from './routes/index';
 
 // create express instance
 const app = express();
@@ -7,7 +8,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 //create route
-app.get('/', (req, res) => res.send('Hello World'))
+app.use('/', router)
 
 // start server
 app.listen(port, () =>
