@@ -4,8 +4,8 @@ import router from './routes/index';
 // create express instance
 const app = express();
 
-//declare environment variable PORT , use 3000 for default port 
-const port = process.env.PORT || 3000;
+//declare environment variable PORT , use 4000 for default port 
+const port = process.env.PORT || 4000;
 
 //create route
 app.use('/', router)
