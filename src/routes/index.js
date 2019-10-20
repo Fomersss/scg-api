@@ -4,6 +4,6 @@ import { findRestuarant, findValue } from '../controllers/scg'
 const router = express.Router()
 
 router.get('/scg/findvalue', findValue)
-router.get('/scg/restuarant', findRestuarant)
+router.get('/scg/restaurant', findRestuarant)
 
 export default router;
